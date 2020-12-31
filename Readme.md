@@ -1,7 +1,5 @@
-The project pushed to github contains every node_modules, hence the reason it doesn't have a small size
-
-Run forlink-backend with "npm run start:dev"
-Run forlink-frontend with "ng serve"
+Go to forlink-backend with "npm run start:dev"
+Go to forlink-frontend with "ng serve"
 
 user postman to test the APIs, for example :
 
