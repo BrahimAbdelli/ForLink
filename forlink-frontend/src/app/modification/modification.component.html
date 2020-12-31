@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Create a Task</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form #f="ngForm" class="mat-elevation-z8" style="width: 100%; padding: 5px;">
+  
+        <mat-form-field>
+          <input matInput placeholder="Title" name="title" [(ngModel)] = "task.title" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Description" name="description" [(ngModel)] = "task.description" required>
+        </mat-form-field>
+        
+      </form>
+  
+    </mat-card-content>
+    <mat-card-actions>
+        <button  mat-raised-button *ngIf="task.id" (click)="updateTask(f)" color="primary">Update Task</button>
+        
+    </mat-card-actions>
+  </mat-card>
